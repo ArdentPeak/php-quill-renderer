@@ -297,11 +297,13 @@ class Html extends Parse
                 $delta = new CompoundVideo($quill['insert']['video']);
             }
 
-            foreach ($quill['attributes'] as $attribute => $value) {
-                $delta->setAttribute($attribute, $value);
+            if (isset($delta)) {
+                foreach ($quill['attributes'] as $attribute => $value) {
+                    $delta->setAttribute($attribute, $value);
+                }
+    
+                $this->deltas[] = $delta;
             }
-
-            $this->deltas[] = $delta;
         }
     }
 
