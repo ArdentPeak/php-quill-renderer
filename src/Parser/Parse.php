@@ -259,6 +259,13 @@ abstract class Parse implements ParserInterface, ParserAttributeInterface
                                         $this->attributeBold($quill);
                                         break;
 
+                                    case Options::ATTRIBUTE_WIDTH:
+                                        $this->image($quill);
+                                        break;
+                                    case Options::ATTRIBUTE_ALT:
+                                        $this->image($quill);
+                                        break;
+
                                     case Options::ATTRIBUTE_COLOR:
                                         $this->attributeColor($quill);
                                         break;

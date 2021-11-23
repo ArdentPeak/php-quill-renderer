@@ -22,6 +22,9 @@ class Options
         self::FORMAT_GITHUB_MARKDOWN,
     ];
 
+    public const ATTRIBUTE_WIDTH = 'width';
+    public const ATTRIBUTE_ALT = 'alt';
+    
     public const GITHUB_MARKDOWN_TOKEN_STRIKE = '~~';
 
     public const HTML_TAG_BOLD = 'strong';
